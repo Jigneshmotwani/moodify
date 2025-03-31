@@ -1,0 +1,56 @@
+[
+    {
+        "dataset_name": "SoundTracks",
+        "subsets": [
+            {
+                "subset_name": "SoundTracks Set1",
+                "audios_rel_path": "data/SoundTracks/Set1",
+                "labels_rel_path": "data/SoundTracks/set1_tracklist.csv",
+                "audio_ref_col": "Nro",
+                "label_col": "Emotion",
+                "audio_format": ".mp3",
+                "label_categories": [
+                    "Happy",
+                    "Sad",
+                    "Tender",
+                    "Anger"
+                ],
+                "label_mapping": {
+                    "Happy": "Happy",
+                    "Sad": "Sad",
+                    "Anger": "Anger",
+                    "Tender": "Neutral"
+                }
+            },
+            {
+                "subset_name": "SoundTracks Set2",
+                "audios_rel_path": "data/SoundTracks/Set2",
+                "labels_rel_path": "data/SoundTracks/set2_tracklist.csv",
+                "audio_ref_col": "Nro",
+                "label_col": "Emotion",
+                "audio_format": ".mp3",
+                "label_categories": [
+                    "Happy High",
+                    "Happy Mod.",
+                    "Sad High",
+                    "Sad Mod.",
+                    "Tender High",
+                    "Tender Mod.",
+                    "Anger High",
+                    "Anger Mod."
+                ],
+                "label_mapping": {
+                    "Happy High": "Happy",
+                    "Happy Mod.": "Happy",
+                    "Sad High": "Sad",
+                    "Sad Mod.": "Sad",
+                    "Tender High": "Neutral",
+                    "Tender Mod.": "Neutral",
+                    "Anger High": "Anger",
+                    "Anger Mod.": "Anger"
+                }
+            }
+        ],
+    "flags": ["process_whisper", "process_yamnet"]
+    }
+]

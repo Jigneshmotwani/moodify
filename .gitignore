@@ -1,0 +1,14 @@
+__pycache__
+.ipynb_checkpoints
+.vscode
+
+# data files
+
+processed
+
+# products of training
+runs
+
+# unwanted file types
+*.pdf
+*.pt
